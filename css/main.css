@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #ffff;
+}
+.marcodiv{
+    border: solid 1px black;
+}
+
+.fondodiv{
+    background-color: chartreuse;
+}
+
+.container-gral{
+    position: relative;
+    color: #ffff;
+    width: 90%;
+    height: 900px;
+    margin: 0 auto 0 auto;
+    background-color: #AE05FC;
+    -webkit-box-shadow: -1px -1px 22px 17px rgba(255, 30, 230, 0.75);
+    -moz-box-shadow:    -1px -1px 22px 17px rgba(255, 30, 230, 0.75);
+    box-shadow:         -1px -1px 22px 17px rgba(255, 30, 230, 0.75);
+}
