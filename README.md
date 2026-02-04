@@ -1,2 +1,2 @@
-# sitioingrid
-site ingrid
+# bostraptemplate
+theme boostrap 
