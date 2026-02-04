@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <?php include_once "functions.php"; ?>
 <?php include "./componentes/head.php"; ?>
@@ -52,3 +53,38 @@
   <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+=======
+<?php
+
+/**
+ * The main template file.
+ * 
+ * To override home page (for listing latest post) add home.php into the theme.<br>
+ * If front page displays is set to static, the index.php file will be use.<br>
+ * If front-page.php exists, it will be override any home page file such as home.php, index.php.<br>
+ * To learn more please go to https://developer.wordpress.org/themes/basics/template-hierarchy/ .
+ * 
+ * @package bootstrap-basic4
+ */
+// begins template. -------------------------------------------------------------------------
+get_header();
+?>
+
+<?php include(get_template_directory() . "/template-parts/parts-homepage/homepage-carrusel-productos.php"); ?>
+
+<?php include(get_template_directory() . "/template-parts/parts-homepage/homepage-eventos-home.php"); ?>
+
+<?php include(get_template_directory() . "/template-parts/feed-instagram.php"); ?>
+
+<?php include(get_template_directory() . "/template-parts/parts-homepage/homepage-cards-formas-pago.php"); ?>
+
+<?php include(get_template_directory() . "/template-parts/parts-homepage/homepage-banner-destacado.php"); ?>
+
+<?php include(get_template_directory() . "/template-parts/parts-homepage/homepage-slider.php"); ?>
+
+<?php
+get_footer();
+
+?>
+
+>>>>>>> 0395cb17f0a127a8962e641084be9f4ba97e9c7c
