@@ -40,9 +40,9 @@ get_header(); ?>
     }
 </style>
 
-<div class="content">
+<div class="container my-5">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <div class="d-flex justify-content-center">
+            <div class="row justify-content-center">
                 <div class="col-lg-10">
 
                     <!-- Card del producto -->
@@ -99,26 +99,22 @@ get_header(); ?>
                                 $link_target = isset($link['target']) ? esc_attr($link['target']) : '_self';
                                 $rel_attr    = ($link_target === '_blank') ? 'rel="noopener"' : '';
                             ?>
-                            <?php echo cat_odin_ini('rgb(60, 60, 60)', ['z','z','z',$link_title.'...'], '#000',''); ?>
                                 <a href="<?php echo $link_url; ?>"
-                                    class="btn btn-lg btn-outline-primary mb-4 px-5 odin-bed"
+                                    class="btn btn-lg btn-outline-primary mt-4 px-5"
                                     target="<?php echo $link_target; ?>"
                                     <?php echo $rel_attr; ?>>
                                     <?php echo $link_title; ?>
                                 </a>
-                            <?php cat_odin_end(); ?>
                             <?php endif; ?>
                         </div>
                     </div>
 
                     <!-- Contenido del post -->
-                    <?php if (get_the_content()): ?>
-                        <div class="mt-5">
-                            <div class="p-4 bg-light rounded shadow-sm">
-                                <?php the_content(); ?>
-                            </div>
+                    <div class="mt-5">
+                        <div class="p-4 bg-light rounded shadow-sm">
+                            <?php the_content(); ?>
                         </div>
-                    <?php endif; ?>
+                    </div>
 
                 </div>
             </div>

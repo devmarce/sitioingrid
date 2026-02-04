@@ -41,7 +41,6 @@ $descuento              = intval(get_field('descuento', $id));
 $stock                  = intval(get_field('stock', $id));
 $unidad                 = get_field('unidad', $id);
 $promo                  = get_field('promo', $id);
-$tag_promo                  = get_field('tag_promo', $id);
 $modal_form             = get_field('modal_form', $id);
 $enlace_solicitar       = get_field('enlace_solicitar', $id);
 $hot_sale               = get_field('hot_sale', $id);
@@ -253,6 +252,7 @@ $wa_delicias = get_field('whatsapp_delicias', 'option');
 
   <h1 class="f-dulcing hover-underline"><?php echo esc_html($nombre); ?></h1>
 
+  <?php //include(get_template_directory() . "/template-parts/parts-ver-delicias/test.php"); ?>
   <?php include(get_template_directory() . "/template-parts/parts-ver-delicias/verdelicias-tags.php"); ?>
 
   <?php include(get_template_directory() . "/template-parts/parts-ver-delicias/verdelicas-card-product.php"); ?>
